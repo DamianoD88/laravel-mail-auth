@@ -2551,7 +2551,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _components_PostTag_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/PostTag.vue */ "./resources/js/components/PostTag.vue");
+/* harmony import */ var _components_PostTag_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/PostTag.vue */ "./resources/js/components/PostTag.vue");
 //
 //
 //
@@ -2573,7 +2573,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "SinglePost",
   components: {
-    PostTag: _components_PostTag_vue__WEBPACK_IMPORTED_MODULE_1__["default"]
+    PostTag: _components_PostTag_vue__WEBPACK_IMPORTED_MODULE_0__["default"]
   },
   data: function data() {
     return {
@@ -55066,7 +55066,7 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! D:\Boolean\Esercizi\mamp_public\php-laravel-odd-list\resources\js\front.js */"./resources/js/front.js");
+module.exports = __webpack_require__(/*! D:\Boolean\Esercizi\mamp_public\laravel-mail-auth\resources\js\front.js */"./resources/js/front.js");
 
 
 /***/ })
