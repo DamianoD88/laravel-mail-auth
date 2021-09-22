@@ -28,7 +28,7 @@
                             {{ error }}
                         </p>
                     </div>
-                    <button type="submit" class="btn btn-primary"> {{ sending ? 'invio in corso' : 'invia'}}</button>
+                    <button type="submit" class="btn btn-primary"> {{ sending ? 'Attendi.. invio in corso' : 'invia'}}</button>
                 </form>
             </div>
         </div>

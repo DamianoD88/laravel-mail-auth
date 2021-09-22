@@ -52,8 +52,9 @@ class PostController extends Controller
             'image' => 'nullable|image'
         ]);
 
-
+        
         $data = $request->all();
+        // dd($data);
 
 
   

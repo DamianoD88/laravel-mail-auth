@@ -38646,7 +38646,12 @@ var render = function() {
             _c(
               "button",
               { staticClass: "btn btn-primary", attrs: { type: "submit" } },
-              [_vm._v(" " + _vm._s(_vm.sending ? "invio in corso" : "invia"))]
+              [
+                _vm._v(
+                  " " +
+                    _vm._s(_vm.sending ? "Attendi.. invio in corso" : "invia")
+                )
+              ]
             )
           ]
         )

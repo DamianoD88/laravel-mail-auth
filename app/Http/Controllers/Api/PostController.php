@@ -15,21 +15,20 @@ class PostController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {   
-        //post unica pag
-        // $posts = Post::all();
-        // return response()->json([
-        //     'successo' => true,
-        //     'risultato' => '$posts'
-
-        // ]);
-
+    {
+        
         $posts = Post::paginate(4);
-         return response()->json([
-             'successo' => true,
-             'risultato' => '$posts'
 
-         ]);
+        $posts->each(function($post) {
+            if($post->cover){
+                $post->cover = url('storage/' .$post->cover);
+            }
+        });
+
+        return response()->json([
+            'success' => true,
+            'results' => $posts
+        ]);
     }
 
 
@@ -39,9 +38,25 @@ class PostController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($slug)
     {
-        //
+        $post = Post::where('slug', $slug)->with(['category','tags'])->first();
+        if($post) {
+            if($post->cover){
+                $post->cover = url('storage/' .$post->cover);
+            }
+
+            return response()->json([
+                'success' => true,
+                'results'=> $post
+            ]);
+        } 
+
+        return response()->json([
+            'success' => false,
+            'results'=> 'non ce ne sono'
+        ]);
+        
     }
 
 }
